@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src='./js/api.js'></script>
+    <script src='./js/config.js'></script>
+  </head>
+  <body class="page">
+    <header class="header page__header">
+      <span class="logo">Погода</span>
+      <p class="header__city">
+        <span class="header__description">В твоём городе: </span>
+        <span class="header__temp">-</span>
+      </p>
+    </header>
+
+    <div class="user-city">
+      <p class="user-cities__info user-cities__info-one">Чтобы увидеть погоду по своему населённому пункту, разрешите доступ к Вашему местоположению</p>
+      <p class="user-cities__info user-cities__info-two"></p>
+    </div>
+
+    <form class="form">
+      <h3 class="form__title">Узнать погоду в определённом населённом пункте</h3>
+      <fieldset class="form__fieldset">
+        <div class="form__field">
+          <input class="form__input form__input-city" type="text" name="city" placeholder="City" required />
+          <span class="form__error">Введите название города на русском или анлийском языке</span>
+        </div>
+        <button class="form__button" type="submit">Отправить</button>
+      </fieldset>
+    </form>
+    
+    
+    <div class="selected-city">
+      <div class="selected-city__block">
+        <p class="selected-city__info selected-city__info-one">Введите название города в форме</p>
+        <p class="selected-city__info selected-city__info-two"></p>
+      </div>
+    </div>
+
+
+
+
+    <footer class="footer page__footer">
+      <span>&copy; 2020 Источник данных — <a href="https://openweathermap.org/current" target="_blank" class="footer__link">OpenWeather</a></span>
+    </footer>
+    <script src='./js/script.js'></script>
+  </body>
+</html>
