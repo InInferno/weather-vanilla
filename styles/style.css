@@ -17,16 +17,29 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1550px;
-  min-width: 704px;
   margin: auto;
   background-image: url(../images/icons.png);
-  /* background-size: cover; */
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #192033;
+}
+
+@media screen and (max-width: 499px) {
+	.header {
+    background-image: none;
+	}
 }
 
 .logo {
   font-size: 24px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 549px) {
+	.logo {
+    font-size: 18px;
+	}
 }
 
 .header__city {
@@ -47,8 +60,14 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 549px) {
+	.header__temp {
+    font-size: 18px;
+	}
+}
+
 .user-city {
-  width: 600px;
+  width: 80%;
   height: 200px;
   margin: 20px auto 0 auto;
   color: #fff;
@@ -57,37 +76,24 @@
   border: 1px solid #545454;
   border-radius: 5px;
   background-color: #192033;
-  /* background-image: url(../images/rain.jpg); */
   background-size: cover;
+}
+
+@media screen and (max-width: 599px) {
+	.user-city {
+    padding: 0 20px;
+    font-size: 14px;
+	}
 }
 
 .user-cities__info {
   margin-top: 55px;
 }
 
-.selected-city__info {
-  margin-top: 55px;
-}
-
-.selected-city__block {
-  width: 600px;
-  height: 200px;
-  margin: 20px auto 0 auto;
-  color: #fff;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid #545454;
-  border-radius: 5px;
-  background-color: #192033;
-  /* background-image: url(../images/rain.jpg); */
-  background-size: cover;
-}
-
 .form {
-  width: 500px;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
-  
 }
 
 .form__field {
@@ -108,7 +114,6 @@
   color: white;
 }
 
-
 .button:focus {
   outline-color: greenyellow;
 }
@@ -116,7 +121,6 @@
 .button:invalid {
   background-color: red;
 }
-
 
 .form__error {
   display: none;
@@ -130,7 +134,7 @@
 
 .form__input {
   border-radius: 5px;
-  width: 300px; 
+  width: 98%;
 }
 
 .form__input:valid:not(:placeholder-shown) {
@@ -145,8 +149,21 @@
 	display: block;
 }
 
-.page__wrapper {
-  margin: 100px auto 70px;
+.selected-city {
+  width: 97%;
+  height: 200px;
+  margin: 20px auto 0 auto;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  background-color: #192033;
+  background-size: cover;
+}
+
+.selected-city__info {
+  margin-top: 55px;
 }
 
 .footer {
